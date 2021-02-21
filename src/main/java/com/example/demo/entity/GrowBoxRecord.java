@@ -14,6 +14,8 @@ public class GrowBoxRecord implements Serializable {
 
     @Id
     @Column
+    private Integer growBoxRecordId;
+    @Column
     private Integer growBoxId;
     @Id
     @Column
@@ -24,6 +26,14 @@ public class GrowBoxRecord implements Serializable {
     private Integer humidity;
     @Column
     private Integer co2;
+
+    public Integer getGrowBoxRecordId() {
+        return growBoxRecordId;
+    }
+
+    public void setGrowBoxRecordId(Integer growBoxRecordId) {
+        this.growBoxRecordId = growBoxRecordId;
+    }
 
     public Integer getGrowBoxId() {
         return growBoxId;
