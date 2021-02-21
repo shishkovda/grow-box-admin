@@ -14,6 +14,7 @@ public class GrowBoxRecord {
     @Id
     @Column
     private Integer growBoxId;
+    @Id
     @Column
     private Date date;
     @Column
