@@ -10,14 +10,13 @@ import java.util.List;
 
 @Entity
 @Table(name="history")
-public class GrowBoxRecord implements Serializable {
+public class GrowBoxRecord {
 
     @Id
     @Column
     private Integer growBoxRecordId;
     @Column
     private Integer growBoxId;
-    @Id
     @Column
     private Date date;
     @Column
